@@ -1,0 +1,24 @@
+{
+  "name": "joybox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuyuPanda/joybox.git"
+  },
+  "author": "Panji Bagaskoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FuyuPanda/joybox/issues"
+  },
+  "homepage": "https://github.com/FuyuPanda/joybox#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
+}

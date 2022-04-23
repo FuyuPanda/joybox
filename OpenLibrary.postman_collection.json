@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "9d41f998-0a4d-45ba-af76-f5979c8b4684",
+		"name": "OpenLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Book List By Subject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/book/love",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"book",
+						"love"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrow new book(s)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\":\"Panji Bagaskoro\",\r\n    \"dob\":\"1992-08-08\",\r\n    \"address\":\"Jaksel\",\r\n    \"subject\":\"love\",\r\n    \"titles\":[\"Wuthering Heights\",\"Romeo and Juliet\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/book/borrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"book",
+						"borrow"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
